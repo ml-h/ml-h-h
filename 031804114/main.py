@@ -78,7 +78,6 @@ if __name__ == '__main__':
 
     file1.close()
     file2.close()
-    # 采用分词，复杂度较高，可以采用TF-IDF的方式找出文章若干个关键词，再进行比较
     topK = 800  # 关键词数量 该数值会影响相似度
     s = Similarity(txt1, txt2, topK)
     result = s.similar()

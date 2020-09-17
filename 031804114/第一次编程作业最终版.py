@@ -56,12 +56,12 @@ class Similarity():
 
 #打开并读取文件
 if __name__ == '__main__':
-    # file1=open(r"D:\machine learn\softproject\sim_0.8\orig.txt","r",encoding='UTF-8')
-    # file2=open(r"D:\machine learn\softproject\sim_0.8\orig_0.8_add.txt","r",encoding='UTF-8')
+    file1=open(r"D:\machinelearn\softproject\sim_0.8\orig.txt","r",encoding='UTF-8')
+    file2=open(r"D:\machinelearn\softproject\sim_0.8\orig_0.8_add.txt","r",encoding='UTF-8')
 #从命令行读取绝对路径，打开两个文件，文件内容为中文
 
-    file1=open(input(),'r',encoding='utf-8')
-    file2=open(input(),'r',encoding='utf-8')
+#     file1=open(input(),'r',encoding='utf-8')
+#     file2=open(input(),'r',encoding='utf-8')
 
 
     txt1=file1.read()
@@ -73,8 +73,9 @@ if __name__ == '__main__':
     topK = 800  #关键词数量 该数值会影响相似度
     s = Similarity(txt1, txt2, topK)
     result = s.similar()
-    result =round(result,2)
-    with open("result.txt","w") as f:
-        f.write(str(result))
-    f.close()
+print('%.2f'% result)
+#     result =round(result,2)
+#     with open("result.txt","w") as f:
+#         f.write(str(result))
+#     f.close()
     # 

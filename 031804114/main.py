@@ -62,7 +62,7 @@ class Similarity():
         return sum / (A * B)
 
 
-# 打开并读取文件
+# 打开并读取文件，网查sys语法
 if __name__ == '__main__':
     # file1=open(r"D:\machine learn\softproject\sim_0.8\orig.txt","r",encoding='UTF-8')
     # 从命令行读取绝对路径

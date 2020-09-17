@@ -56,10 +56,8 @@ class Similarity():
 
 #打开并读取文件
 if __name__ == '__main__':
-    # t1 = '"D:\Python\Firstcode\orig.txt"'
-    # t2 = '"D:\Python\Firstcode\orig_0.8.add.txt"'
     # file1=open(r"D:\machine learn\softproject\sim_0.8\orig.txt","r",encoding='UTF-8')
-    # file2=open(r"D:\machine learn\softproject\sim_0.8\orig.txt","r",encoding='UTF-8')
+    # file2=open(r"D:\machine learn\softproject\sim_0.8\orig_0.8_add.txt","r",encoding='UTF-8')
 #从命令行读取绝对路径，打开两个文件，文件内容为中文
 
     file1=open(input(),'r',encoding='utf-8')

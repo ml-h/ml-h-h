@@ -64,11 +64,8 @@ class Similarity():
 
 # 打开并读取文件
 if __name__ == '__main__':
-    # t1 = '"D:\Python\Firstcode\orig.txt"'
-    # t2 = '"D:\Python\Firstcode\orig_0.8.add.txt"'
     # file1=open(r"D:\machine learn\softproject\sim_0.8\orig.txt","r",encoding='UTF-8')
-    # file2=open(r"D:\machine learn\softproject\sim_0.8\orig.txt","r",encoding='UTF-8')
-    # 从命令行读取绝对路径，打开两个文件，文件内容为中文
+    # 从命令行读取绝对路径
     x1 = sys.argv[1]
     x2 = sys.argv[2]
     x3 = sys.argv[3]
@@ -89,4 +86,4 @@ if __name__ == '__main__':
     with open(x3, "w") as f:
         f.write(str(result))
     f.close()
-    # print('%.2f' % result)
+ 
